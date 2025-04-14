@@ -43,7 +43,7 @@ const ExplainTeamIdModal: React.FC<ExplainTeamIdModalProps> = (props) => {
             </ol>
             <p>
                 Tip: if you want to look at your friends' teams, you don't have to find their ids in
-                the same way. Just navigate to your leagues page on NeverGetFancy and you'll be able
+                the same way. Just navigate to your leagues page on FunFantasyAnalysis and you'll be able
                 to search for them.
             </p>
         </ReactModal>

@@ -21,7 +21,7 @@ export async function generateMetadata(
 
     if (teamId) {
         return {
-            title: `${await getTeamNameForTitle(teamId)} - NeverGetFancy`,
+            title: `${await getTeamNameForTitle(teamId)} - FunFantasyAnalysis`,
         };
     }
 }

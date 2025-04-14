@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta content="width=device-width,initial-scale=1" name="viewport" />
                 <script
                     defer
-                    data-domain="nevergetfancy.com"
+                    data-domain="funfantasyanalysis.com"
                     src="https://plausible.io/js/script.tagged-events.js"
                 ></script>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

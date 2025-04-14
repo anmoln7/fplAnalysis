@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (teamId) {
         return {
-            title: `${await getTeamNameForTitle(teamId)}'s leagues - NeverGetFancy`,
+            title: `${await getTeamNameForTitle(teamId)}'s leagues - FunFantasyAnalysis`,
         };
     }
 }

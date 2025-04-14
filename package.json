@@ -1,9 +1,9 @@
 {
-    "name": "nevergetfancy",
+    "name": "funfantasyanalysis",
     "version": "1.0.0",
     "description": "Verify how many points you lost (or gained!) by getting fancy in Fantasy Premier League",
     "main": "index.js",
-    "repository": "https://github.com/jamjar919/nevergetfancy.git",
+    "repository": "https://github.com/anmoln7/fplAnalysis.git",
     "author": "FPLMadders",
     "license": "None",
     "engines": {

@@ -62,7 +62,7 @@ const Search: React.FC = () => {
     return (
         <div className={styles.searchPage}>
             <header>
-                <Header title={'NeverGetFancy'} subtitle={`A stupid concept by @FPLMadders`} />
+                <Header title={'FunFantasyAnalysis'} subtitle={`A stupid concept by @FPLMadders`} />
             </header>
             <div className={styles.salahStats}>
                 <SalahStats />

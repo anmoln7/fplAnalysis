@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </span>
             <span className={styles.divider}>•</span>
             <span>
-                <FooterLink href="https://github.com/jamjar919/nevergetfancy">
+                <FooterLink href="https://github.com/anmoln7/fplAnalysis">
                     Code for nerds
                 </FooterLink>
             </span>
