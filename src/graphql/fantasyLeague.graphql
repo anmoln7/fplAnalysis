@@ -1,0 +1,88 @@
+type FantasyPlayerGameSummary {
+    gameweek: Int!
+    points: Int!
+    opposingTeamId: ID!
+    opposingTeam: PremierLeagueTeam
+    wasHome: Boolean!
+    homeTeamScore: Int!
+    awayTeamScore: Int!
+    minutes: Int!
+    goals: Int!
+    assists: Int!
+    cleanSheets: Int!
+    conceded: Int!
+    ownGoals: Int!
+    penaltiesSaved: Int!
+    penaltiesMissed: Int!
+    yellowCards: Int!
+    redCards: Int!
+    saves: Int!
+    bonus: Int!
+}
+
+type FantasyTeam {
+    id: ID!
+    name: String!
+    manager: FantasyManager!
+    leagues: [FantasyLeague]!
+    startedEvent: Int!
+    currentEvent: Int!
+}
+
+type FantasyManager {
+    name: String!
+}
+
+type FantasyLeague {
+    id: ID!
+    name: String!
+    standings: [FantasyLeagueStanding]
+}
+
+type FantasyLeagueStanding {
+    teamId: ID!
+    team: FantasyTeam
+    playerName: String!
+    teamName: String!
+    rank: Int!
+}
+
+type FantasyTeamSearchResult {
+    id: ID!
+    teamName: String!
+    managerName: String!
+    team: FantasyTeam
+}
+
+type PremierLeaguePlayer {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    displayName: String!
+    totalPoints: Int!
+    goals: Int!
+    assists: Int!
+    cleanSheets: Int!
+    bonus: Int!
+    teamId: ID!
+    team: PremierLeagueTeam
+    position: PremierLeaguePlayerPosition!
+}
+
+type PremierLeagueTeam {
+    id: ID!
+    name: String!
+    shortName: String!
+    players: [PremierLeaguePlayer]!
+}
+
+enum PremierLeaguePlayerPosition {
+    GOALKEEPER
+    DEFENDER
+    MIDFIELDER
+    FORWARD
+}
+
+type Query {
+    topScorer: PremierLeaguePlayer
+}

@@ -1,0 +1,20 @@
+@use '@media' as media;
+
+.suggestions {
+    position: relative;
+    padding-top: 1em;
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.suggestion {
+    flex: 1 1 300px;
+
+    @include media.mobile {
+        &:nth-child(even) {
+            display: none;
+        }
+    }
+}

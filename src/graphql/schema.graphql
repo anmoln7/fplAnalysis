@@ -1,0 +1,10 @@
+type Query {
+    fancy(fantasyTeamId: ID!): FancyResult!
+
+    fantasyTeam(id: ID!): FantasyTeam!
+    searchFantasyTeam(query: String!): [FantasyTeamSearchResult]!
+
+    premierLeagueTeams: [PremierLeagueTeam!]!
+    premierLeagueTeam(id: ID!): PremierLeagueTeam!
+    premierLeaguePlayer(id: ID!): PremierLeaguePlayer!
+}

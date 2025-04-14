@@ -1,0 +1,64 @@
+@use '@media' as media;
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    @include media.mobile {
+        flex: 1 1;
+    }
+}
+
+.imageContainer {
+    display: flex;
+
+    img {
+        width: 42px;
+
+        @include media.mobile {
+            width: 30px;
+        }
+    }
+}
+
+.playerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include media.mobile {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+.playerName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    @include media.mobile {
+        margin: auto auto auto 0.5em;
+    }
+}
+
+.captainIcon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.playerDetailsSecondary {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    gap: 1em;
+
+    @include media.mobile {
+        gap: 0.5em;
+        margin: auto;
+    }
+}

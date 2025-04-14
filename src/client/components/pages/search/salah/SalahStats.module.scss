@@ -1,0 +1,84 @@
+@use '@media' as media;
+
+.salah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.salahStats {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    .image {
+        display: none;
+    }
+
+    @include media.mobile {
+        flex-direction: column;
+
+        .image {
+            display: block;
+            top: -30px;
+            right: -85px;
+            position: absolute;
+            height: 200px;
+        }
+    }
+}
+
+.statsBg {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--dark-text);
+    display: flex;
+    margin: 40px 0;
+
+    height: 200px;
+    width: 200px;
+
+    @include media.mobile {
+        min-width: 0;
+        height: 175px;
+        width: 175px;
+    }
+}
+
+.stats {
+    background-image: linear-gradient(to right, rgb(5, 240, 255), rgb(0, 255, 135));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+
+    margin: auto;
+}
+
+.totalPoints {
+    font-size: 3em;
+}
+
+.generalStats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 1.5em;
+    gap: 20px;
+
+    @include media.mobile {
+        font-size: 1.25em;
+    }
+}
+
+.emoji {
+    -webkit-text-fill-color: white;
+}

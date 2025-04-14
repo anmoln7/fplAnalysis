@@ -1,0 +1,6 @@
+fragment LeagueStandingAttributes on FantasyLeagueStanding {
+    teamId
+    rank
+    playerName
+    teamName
+}
